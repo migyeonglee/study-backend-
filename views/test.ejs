@@ -16,41 +16,23 @@
             align-items: center;
             justify-content: center;
         }
-        
-        img {
-            width: 500px;
-            height: auto;
-        }
     </style>
 </head>
 
 <body>
     <div id="text">hello express ejs</div>
-    <img src="/static/img/a.jpg" alt="">
-    <a href="/test">클릭</a>
-    <!-- <% var person =[{name:"이미경", gender : "woman"},{name:"홍길동", gender : "man"}] %> -->
-    <table border="1">
-        <tr>
-            <td>name</td>
-            <td>gender</td>
-        </tr>
-        <% for(var i = 0; i < per.length; i++){ %>
-            <tr>
-                <td>
-                    <%=per[i].name%>
-                </td>
-                <td>
-                    <%=per[i].gender%>
-                </td>
-            </tr>
-            <% } %>
-    </table>
-    <% for(var j = 0; j<5; j++){ %>
+    <a href="/test0">table</a>
+    <a href="/test1">img</a>
+
+    <!-- <% for(var j = 0; j<5; j++){ %>
         <div>hello
             <%=j%>
         </div>
-        <% } %>
-            <%-include("test1.ejs")%>
+        <% } %> -->
+    <!-- <%-include("test1.ejs")%> -->
+    <% var aaa ="<img src='/eee.jpg'>" %>
+        <%=aaa%>
+            <%-aaa%>
 </body>
 
 </html>
